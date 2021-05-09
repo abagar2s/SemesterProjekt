@@ -106,26 +106,6 @@ public class Parkpl_groesse implements Parkpl_groesseIF {
 	public int restraus () {
 		return brest--;
 	}
-	// freie plätze rechnen
-	@Override
-	public int FreiPlatzeFrauen(){
-		return frauen-bfrauen;
-	}
-	@Override
-	public int FreiPlatzeBehindert(){
-		return behindert-bbehindert;
-	}
-	@Override
-	public int FreiPlatzeFamilie(){
-		return familien-bfamilien;
-	}
-	@Override
-	public int FreiPlatzeRest(){
-		return rest-brest;
-	}
-	@Override
-	public int FreiPlatzeGesamt(){
-		return gesamt-getBgesamt();
-	}
+	
 
 }

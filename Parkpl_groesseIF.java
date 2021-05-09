@@ -8,12 +8,5 @@ public interface Parkpl_groesseIF {
 	public int behindertraus();
 	public int famillienraus();
 	public int restraus();
-	public int FreiPlatzeFrauen();
-	public int FreiPlatzeBehindert();
-	public int FreiPlatzeFamilie();
-	public int FreiPlatzeRest();
-	public int FreiPlatzeGesamt();
-	
-
 
 }
