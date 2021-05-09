@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 class PTest {
      private Parkpl_groesse pp1;
      private Preise p1;
+	 private FreiPlaetze fp1;
 
 	@BeforeEach
 	void setUp() throws Exception {
@@ -69,26 +70,27 @@ class PTest {
 	@Test
 	@DisplayName("freie Plätze Test")
 	void test4() {
+		fp1=new FreiPlaetze(pp1);
 		pp1.frauenrein();
 		pp1.frauenrein();
 		pp1.behindertrein();
 		pp1.famillienrein();
 		pp1.restrein();
-		assertEquals(18,pp1.FreiPlatzeFrauen());
-		assertEquals(29,pp1.FreiPlatzeBehindert());
-		assertEquals(4,pp1.FreiPlatzeFamilie());
-		assertEquals(49,pp1.FreiPlatzeRest());
-		assertEquals(100,pp1.FreiPlatzeGesamt());
+		assertEquals(18,fp1.FreiPlatzeFrauen());
+		assertEquals(29,fp1.FreiPlatzeBehindert());
+		assertEquals(4,fp1.FreiPlatzeFamilie());
+		assertEquals(49,fp1.FreiPlatzeRest());
+		assertEquals(100,fp1.FreiPlatzeGesamt());
 		pp1.frauenraus();
 		pp1.frauenraus();
 		pp1.behindertraus();
 		pp1.famillienraus();
 		pp1.restraus();
-		assertEquals(20,pp1.FreiPlatzeFrauen());
-		assertEquals(30,pp1.FreiPlatzeBehindert());
-		assertEquals(5,pp1.FreiPlatzeFamilie());
-		assertEquals(50,pp1.FreiPlatzeRest());
-		assertEquals(105,pp1.FreiPlatzeGesamt());
+		assertEquals(20,fp1.FreiPlatzeFrauen());
+		assertEquals(30,fp1.FreiPlatzeBehindert());
+		assertEquals(5,fp1.FreiPlatzeFamilie());
+		assertEquals(50,fp1.FreiPlatzeRest());
+		assertEquals(105,fp1.FreiPlatzeGesamt());
 
 	}
 

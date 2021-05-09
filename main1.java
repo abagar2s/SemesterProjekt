@@ -1,4 +1,3 @@
-
 public class main1 {
     public static void main(String[] args) {
         Parkpl_groesse pp1=new Parkpl_groesse(10, 20, 30,40);
@@ -13,11 +12,11 @@ public class main1 {
         pp1.frauenrein();
         System.out.println(pp1.getBfrauen());
         System.out.println("\n");
-
-        System.out.println(pp1.FreiPlatzeFrauen());
+        FreiPlaetze fp=new FreiPlaetze(pp1);
+        System.out.println(fp.FreiPlatzeFrauen());
 
         pp1.frauenraus();
-        System.out.println(pp1.FreiPlatzeFrauen());
+        System.out.println(fp.FreiPlatzeFrauen());
 
 
     }

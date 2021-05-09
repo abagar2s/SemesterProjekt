@@ -2,5 +2,8 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "c:\\Users\\itsmeeeeee\\Documents\\workspace vscode\\junit-platform-console-standalone-1.8.0-M1.jar"
+    ],
+    "java.project.sourcePaths": [
+        ""
     ]
 }
